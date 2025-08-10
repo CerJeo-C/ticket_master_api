@@ -144,8 +144,8 @@ def main():
     API_KEY = "" 
     city = "Calgary"
     country = "CA"
-    start = datetime(2025, 10, 1, 0, 0)   # Sept 1, 2022 00:00
-    end   = datetime(2025, 12, 1, 0, 0)   # Aug 1, 2025 00:00
+    start = datetime(2025, 10, 1, 0, 0)   
+    end   = datetime(2025, 12, 1, 0, 0)   
 
     fetch_all_events_to_csv(API_KEY, city, country, start, end, out_csv="events.csv")
     print("Wrote events.csv")
@@ -153,3 +153,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
